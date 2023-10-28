@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <title>Alperen Özdil - Kişisel Web Sitesi</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Alperen ÖZDİL  - Kişisel Web Sitesi">
+    <meta name="keywords" content="alperenozdil , Alperen Özdil, ,ÖZDİL , alperenozdil.com">
+    <meta name="author" content="Alperen Özdil">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        function sendEmail() {
+          // E-posta adresi
+          var email = "l2121032044@ogr.sdu.edu.tr";
+          // E-posta konusu
+          var subject = "Konu"; // İstediğiniz bir konu ekleyebilirsiniz
+          // E-posta içeriği
+          var body = "Mesajınızı buraya yazın..."; // Kullanıcıdan alınan mesajı buraya ekleyebilirsiniz
+        
+          // E-posta adresi ve diğer bilgilerle mailto linki oluşturun
+          var mailtoLink = "mailto:" + email + "?subject=" + subject + "&body=" + body;
+        
+          // Kullanıcının varsayılan e-posta istemcisini açmak için mailto linkini kullanın
+          window.location.href = mailtoLink;
+        }
+        </script>
+    <style>
+        /* Düğme stili */
+        .contact-button {
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 50%; /* Oval şekil için border-radius */
+            width: 100px; /* Genişlik ayarlayabilirsiniz */
+            height: 100px; /* Yükseklik ayarlayabilirsiniz */
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            cursor: pointer;
+        }
+
+        /* Düğme hover stil */
+        .contact-button:hover {
+            background-color: white;
+            color: black;
+        }
+    </style>
+
+    
+
+    
+    <style>
+        body {
+            font: 20px Montserrat, sans-serif;
+            line-height: 1.8;
+            color: #f5f6f7;
+        }
+        
+        p {
+            font-size: 16px;
+        }
+        
+        .margin {
+            margin-bottom: 45px;
+        }
+        
+        .bg-1 {
+            background-color: #6ce0d7;
+            
+            color: #333333;
+            
+        }
+        
+        .bg-2 {
+            background-color: #888d7e;
+            
+            color: #ffffff;
+        }
+        
+        .bg-3 {
+            background-color: #ffffff;
+            /* White */
+            color: #555555;
+        }
+        
+        .bg-4 {
+            background-color: #4C3173;
+            
+            color: #fff;
+        }
+        
+        .bg-5 {
+            background-color: #ecebe8;
+            
+            color: #333;
+        }
+        
+        .container-fluid {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+        
+        .navbar {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border: 0;
+            border-radius: 0;
+            margin-bottom: 0;
+            font-size: 12px;
+            letter-spacing: 5px;
+        }
+        
+        .navbar-nav li a:hover {
+            color: #4C3173 !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Alperen Özdil</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#kimdir">Kimdir?</a></li>
+                    <li><a href="#neyapar">Ne yapar?</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#iletisim">İletişim</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    
+    <!-- First Container -->
+    <div id="kimdir" class="container-fluid bg-1 text-center">
+        <h3 class="margin">Merhaba, Ben Alperen!</h3>
+        <img src="resimoo.png" class="img-responsive img-circle margin" style="display:inline" alt="alperenozdil" width="350" height="350">
+        <h3>Bilgisayar Mühendisliği Öğrencisi</h3>
+    </div>
+
+    
+    <div id="neyapar" class="container-fluid bg-2 text-center">
+        <h3 class="margin">Neler Yaparım?</h3>
+        <p>Bilgisayar mühendisliği 3. sınıf öğrencisiyim web alanında çalışmalar yapmaktayım. </p>
+       
+    </div>
+
+    
+    <div id="blog" class="container-fluid bg-3 text-center">
+        <h3 class="margin">Blog</h3>
+        <br>
+        <div class="row">
+            <div class="col-sm-4">
+                <p>C# dilini ortalama düzeyde kullanabilirim.</p>
+                <img src="git.jpg" class="img-responsive margin" style="width:80%" alt="git">
+            </div>
+            <div class="col-sm-4">
+                <p>HTML dilinde geliştirmeler yapmaktayım.</p>
+                <img src="html5.jpg" class="img-responsive margin" style="width:100%" alt="html">
+            </div>
+            <div class="col-sm-4">
+                <p>Python dilinde geliştirmeler yapmaktayım.</p>
+                <img src="python.jpg" class="img-responsive margin" style="width:100%" alt="python">
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="iletisim" class="container-fluid bg-5 text-center">
+        <h3 class="margin">İletişim</h3>
+        <br>
+        <div class="row ">
+            <div class="col-sm-5 text-left">
+                <p>Merhaba demek ister misin?</p>
+                <p><span class="glyphicon glyphicon-map-marker"></span> İstanbul, TR</p>
+                <p><span class="glyphicon glyphicon-phone"></span> +90 555 084 27 55</p>
+                <p><span class="glyphicon glyphicon-envelope"></span> alpalp_3434@hotmail.com</p>
+            </div>
+            <div class="col-sm-7 ">
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="name" name="name" placeholder="İsim" type="text" required>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="email" name="email" placeholder="Mail" type="email" required>
+                    </div>
+                </div>
+                <textarea class="form-control" id="comments" name="comments" placeholder="Mesaj" rows="5"></textarea>
+                <br>
+                <div class="row">
+                    <div class="col-sm-12 form-group">
+                        <button class="btn btn-default pull-right" type="submit">Gönder</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid bg-4 text-center">
+        <p>Tüm Hakları Saklıdır. 2021 - 2023 </br><a href="https://github.com/Alphonzo34">GitHub</a></p>
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+        <i class="fa fa-github" aria-hidden="true"></i>
+        <i class="fa fa-skype" aria-hidden="true"></i>
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+    </footer>
+    <button class="contact-button" onclick="sendEmail()">İletişim</button>
+
+</body>
+
+</html>
